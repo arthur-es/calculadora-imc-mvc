@@ -1,0 +1,30 @@
+<mat-card class="card">
+  <mat-card-content>
+    <br>
+    <h4 class="header" *ngIf="!calculouIMC">
+        Caluladora de IMC 
+    </h4>
+    <br>
+    <div class="container" *ngIf="!calculouIMC">
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Altura" value="1.77" [(ngModel)]="altura">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Peso" value="64.5" [(ngModel)]="peso">
+      </mat-form-field>
+    </div>
+    <div class="container" *ngIf="calculouIMC">
+      <h4 class="result">Seu IMC é {{imc}}</h4> 
+      <br>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <div class="container" *ngIf="!calculouIMC">
+      <button mat-raised-button color="primary" (click)="calcularIMC()">Calcular</button>
+    </div>
+    <div class="container" *ngIf="calculouIMC">
+        <button mat-raised-button color="primary" (click)="calcularOutroIMC()">Voltar</button>
+      </div>
+  </mat-card-actions>
+</mat-card>

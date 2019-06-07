@@ -1,0 +1,41 @@
+.card {
+  max-width: 400px;
+  margin: 20px;
+}
+.header-main {
+  margin-top: 20px;
+}
+.header-image {
+  background-image: url('https://banner2.kisspng.com/20180417/lkq/kisspng-purple-heart-clip-art-purple-frame-5ad5fa97670494.770033721523972759422.jpg');
+  background-size: cover;
+}
+
+.header {
+  color: #673AB7;
+  align-content: center !important;
+  text-align: center !important; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container>* {
+  width: 100%;
+}
+
+.form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.result {
+  text-align: center;
+  align-content: center;
+}
